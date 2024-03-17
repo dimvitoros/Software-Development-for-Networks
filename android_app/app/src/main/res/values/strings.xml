@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AndroidApp</string>
+    <string name="device_id">Device ID</string>
+    <string name="log_in">Log In</string>
+    <string name="write_id">Write your device bellow ID to log in \n\nPlease note that the topic has the following form: \n\n2024project{device_id}\n\nThe ID can be changed in Settings later.</string>
+    <string name="enter_id">Enter your device ID</string>
+    <string name="settings">Settings</string>
+    <string name="no_network_cconnnection">No Network Cconnnection</string>
+    <string name="choose_action">Choose an action</string>
+    <string name="subscribe_options">Publish options</string>
+    <string name="automatic">Automatic</string>
+    <string name="manual">Manual</string>
+    <string name="stop">Stop</string>
+    <string name="title_activity_topic">TopicActivity</string>
+    <string name="exit">Exit</string>
+    <string name="log_out">Log out</string>
+    <string name="write_ip">Broker address</string>
+    <string name="server_settings">Server\'s settings</string>
+    <string name="server_port">Server Port</string>
+    <string name="ip">Brokers address</string>
+    <string name="port">Port</string>
+    <string name="device_settings">Device settings</string>
+    <string name="time_slot">Time slot (0 = Indefinetly) </string>
+    <string name="back">Back</string>
+    <string name="time_seconds">Time (seconds)</string>
+    <string name="save">Save</string>
+    <string name="ip_not_valid">The IP, port number or time slot is not valid</string>
+    <string name="warning_logout">Are you sure that you want to leave the app?</string>
+    <string name="warning">Warning!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

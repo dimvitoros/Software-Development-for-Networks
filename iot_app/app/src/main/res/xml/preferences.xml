@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory android:title="MQTT Connection Settings">
+
+    </PreferenceCategory>
+    <EditTextPreference
+        app:defaultValue="tcp://broker.hivemq.com"
+        app:key="remote_ip"
+
+        app:singleLine="true"
+        app:title="MQTT Broker address"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        app:defaultValue="0"
+        app:key="remote_port"
+
+        app:singleLine="true"
+        app:title="Port"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        android:inputType="number"
+        app:defaultValue="0"
+        app:key="iot_id"
+        app:singleLine="true"
+        app:title="IOT Device identifier"
+        app:useSimpleSummaryProvider="true" />
+    <PreferenceCategory android:title="Info: The MQTT topic is: 2024project{device_id}"
+        app:key="topicmsg">
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Sensor Settings">
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="usegps"
+            app:summaryOff="Using preset coordinates"
+            app:summaryOn="Using real-time GPS coordinates"
+            app:title="Use device's GPS" />
+        <ListPreference
+
+            android:entries="@array/long_lat_val"
+            android:entryValues="@array/locindex"
+            android:key="coordinate_list"
+            android:defaultValue="1"
+            android:title="Select from preset coordinates" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

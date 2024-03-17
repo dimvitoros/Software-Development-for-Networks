@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:gravity="center_vertical"
+    tools:ignore="ExtraText">
+
+tools:context=".SensorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/stype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetching sensor type..."
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/senable"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/stype"
+            android:text="Enable sensor"
+            android:checked="true"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/senable"
+            android:text="Select sensor value:"
+            android:textSize="24sp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/svalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:contentDescription="Sensor value"
+            />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
